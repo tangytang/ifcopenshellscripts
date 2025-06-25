@@ -15,7 +15,7 @@ RUN pip install -r requirements.txt
 # Create symlink for python3 to point to python3.12
 RUN mkdir -p $(python3 -c "import site; print(site.getsitepackages()[0])")
 # Download, unzip, and copy the extracted contents to Python's site-packages directory
-RUN wget "https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-312-v0.8.3-ec13294-linux64.zip" -O /tmp/ifcopenshell.zip && \
+RUN wget "https://s3.amazonaws.com/ifcopenshell-builds/ifcopenshell-python-312-v0.8.3-8621198-linuxarm64.zip" -O /tmp/ifcopenshell.zip && \
     unzip /tmp/ifcopenshell.zip -d /tmp/ifcopenshell && \
     cp -r /tmp/ifcopenshell/* $(python3 -c "import site; print(site.getsitepackages()[0])")
 
