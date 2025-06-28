@@ -1,0 +1,5 @@
+typing_extensions
+click
+ifcopenshell
+ifcpatch
+

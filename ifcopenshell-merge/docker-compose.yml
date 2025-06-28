@@ -1,0 +1,8 @@
+services:
+  ifcopenshell:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    command: python3 main.py data/ifc/test1.ifc data/ifc/test2.ifc data/ifc/test3.ifc data/ifc/test4.ifc -o outputs/merged.ifc
