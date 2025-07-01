@@ -1,8 +1,9 @@
 services:
   ifcopenshell:
+    platform: linux/amd64
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/src/app
-    command: python3 main.py --ifc-path data/ifc/test1.ifc --output outputs/file.obj
+    command: python3 main.py --ifc-path data/ifc/test3.ifc --output outputs/file.obj
