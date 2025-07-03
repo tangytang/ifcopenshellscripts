@@ -51,7 +51,7 @@ COPY lib/socketio /opt/blender/4.3/python/lib/python3.11/site-packages/socketio
 COPY lib/engineio /opt/blender/4.3/python/lib/python3.11/site-packages/engineio
 
 
-RUN blender -b --python-expr "import bpy; bpy.ops.preferences.addon_enable(module='bonsai'); bpy.ops.wm.save_userpref()"
+# RUN blender -b --python-expr "import bpy; bpy.ops.preferences.addon_enable(module='bonsai'); bpy.ops.wm.save_userpref()"
 
 WORKDIR /usr/src/app
 
