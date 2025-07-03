@@ -1,0 +1,4 @@
+debugpy==1.6.0
+click 
+pydantic
+tqdm
