@@ -1,14 +1,7 @@
 services:
   potree-converter:
-    platform: linux/amd64
     build:
       context: .
     volumes:
       - ./outputs:/usr/src/app/outputs
     command: python3 main.py --input_file_path ./data/test.las --method poisson
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              capabilities: [compute, utility, graphics]
