@@ -3,13 +3,13 @@
     "name": "Clash Set A",
     "a": [
       {
-        "file": "../test1.ifc",
+        "file": "../data/golden.ifc",
         "selector": ""
       }
     ],
     "b": [
       {
-        "file": "../test2.ifc",
+        "file": "../data/test1.ifc",
         "selector": "IfcWall"
       }
     ],

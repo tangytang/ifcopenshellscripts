@@ -1,34 +1,622 @@
 [
-  {
-    "name": "Clash Set A",
-    "a": [
-      {
-        "file": "../test1.ifc",
-        "selector": ""
-      }
-    ],
-    "b": [
-      {
-        "file": "../test2.ifc",
-        "selector": "IfcWall"
-      }
-    ],
-    "mode": "intersection",
-    "tolerance": 0.01,
-    "check_all": true,
-    "clashes": {
-      "32ZzzEy_X1peUnHIWvlyL8-21hdCoPOb0VQJppqAio$IV": {
-        "a_global_id": "32ZzzEy_X1peUnHIWvlyL8",
-        "b_global_id": "21hdCoPOb0VQJppqAio$IV",
-        "a_ifc_class": "IfcWallStandardCase",
-        "b_ifc_class": "IfcWallStandardCase",
-        "a_name": "Basic Wall:Generic - 8\":1357164",
-        "b_name": "Basic Wall:Generic - 8\":1357410",
-        "type": "pierce",
-        "p1": [2.3787721551736527, 2.006422097026265, 0.6835962564293119],
-        "p2": [2.1414949624291832, 2.039769231750415, 0.7642955259502583],
-        "distance": 0.2032000000000016
-      }
+    {
+        "name": "Clash Set A",
+        "a": [
+            {
+                "file": "../data/golden.ifc",
+                "selector": ""
+            }
+        ],
+        "b": [
+            {
+                "file": "../data/test1.ifc",
+                "selector": "IfcWall"
+            }
+        ],
+        "mode": "intersection",
+        "tolerance": 0.01,
+        "check_all": true,
+        "clashes": {
+            "2Kt2RW3ePBhvqA_l8nUcWh-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "2Kt2RW3ePBhvqA_l8nUcWh",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcCovering",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Compound Ceiling:Gipsum:419338",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    1.473504331190942,
+                    -5.436602979667396,
+                    3.757
+                ],
+                "p2": [
+                    1.583857366398865,
+                    -5.657309050083242,
+                    3.7569999999999997
+                ],
+                "distance": 0.2032000000000007
+            },
+            "2lr27xQxr3dgAYJiJUYej1-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "2lr27xQxr3dgAYJiJUYej1",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSanitaryTerminal",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "PlumbingFixtures_LavatorySink:PlumbingFixtures_LavatorySink:536810",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "protrusion",
+                "p1": [
+                    1.8417698802794664,
+                    -5.566999545870812,
+                    1.9000000000000004
+                ],
+                "p2": [
+                    1.8526079712294128,
+                    -5.489882521677118,
+                    1.9
+                ],
+                "distance": 0.07787489734137683
+            },
+            "351xvgkMf4G9y4AKYJimfM-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "351xvgkMf4G9y4AKYJimfM",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcWall",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Basic Wall:Interior Wall - 200mm:384711",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -0.777208277568014,
+                    -5.325482913692991,
+                    4.525
+                ],
+                "p2": [
+                    -0.7833539469788176,
+                    -5.119422233448408,
+                    4.525
+                ],
+                "distance": 0.2032000000000007
+            },
+            "351xvgkMf4G9y4AKYJimo0-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "351xvgkMf4G9y4AKYJimo0",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSlab",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Floor:Generic 150mm:382993",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -2.0869111386226162,
+                    -5.141416180388263,
+                    1.0
+                ],
+                "p2": [
+                    -2.25999336542024,
+                    -4.9118940970261935,
+                    1.0000000000000007
+                ],
+                "distance": 0.2032000000000007
+            },
+            "351xvgkMf4G9y4AKYJipMu-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "351xvgkMf4G9y4AKYJipMu",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcWall",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Basic Wall:Exterior Wall - 200mm:385321",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.298374672299811,
+                    -4.690074414748969,
+                    3.4000000000000017
+                ],
+                "p2": [
+                    -5.298374672299809,
+                    -4.484877452013186,
+                    3.400000000000002
+                ],
+                "distance": 0.2032000000000007
+            },
+            "2Kt2RW3ePBhvqA_l8nUcQu-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "2Kt2RW3ePBhvqA_l8nUcQu",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcCovering",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Compound Ceiling:Gipsum:419993",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -0.9133746722998117,
+                    -5.1011490121831855,
+                    3.757
+                ],
+                "p2": [
+                    -0.9133746722998125,
+                    -5.306345974918969,
+                    3.7570000000000006
+                ],
+                "distance": 0.2032000000000007
+            },
+            "2lr27xQxr3dgAYJiJUYejC-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "2lr27xQxr3dgAYJiJUYejC",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSanitaryTerminal",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Furniture_840L 600HVanityCounterTop:2450L x 600H Vanity Counter Top:536807",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "protrusion",
+                "p1": [
+                    1.8305058974633066,
+                    -5.575041634345205,
+                    1.8999999999999952
+                ],
+                "p2": [
+                    1.8426705122100562,
+                    -5.488485902891718,
+                    1.8999999999999948
+                ],
+                "distance": 0.0874063641812494
+            },
+            "2srJKLIXb9xPU8U56UYnCb-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "2srJKLIXb9xPU8U56UYnCb",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSanitaryTerminal",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "PlumbingFixtures_LavatorySink:PlumbingFixtures_LavatorySink:741724",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "protrusion",
+                "p1": [
+                    1.8417698802794664,
+                    -5.566999545870812,
+                    5.575
+                ],
+                "p2": [
+                    1.8526079712294128,
+                    -5.489882521677118,
+                    5.575
+                ],
+                "distance": 0.07787489734137683
+            },
+            "2srJKLIXb9xPU8U56UYnCe-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "2srJKLIXb9xPU8U56UYnCe",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSanitaryTerminal",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Furniture_840L 600HVanityCounterTop:2450L x 600H Vanity Counter Top:741721",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "protrusion",
+                "p1": [
+                    1.8305058974633066,
+                    -5.575041634345205,
+                    5.6
+                ],
+                "p2": [
+                    1.8426705122100564,
+                    -5.488485902891717,
+                    5.6
+                ],
+                "distance": 0.0874063641812494
+            },
+            "3vsKXYQtfEKRiHi9fuuqGm-32ZzzEy_X1peUnHIWvlyNe": {
+                "a_global_id": "3vsKXYQtfEKRiHi9fuuqGm",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyNe",
+                "a_ifc_class": "IfcSlab",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Basic Roof:Generic - 100mm:741158",
+                "b_name": "Basic Wall:Generic - 8\":1357260",
+                "type": "pierce",
+                "p1": [
+                    -12.265661147641346,
+                    -6.222993670463035,
+                    4.1
+                ],
+                "p2": [
+                    -12.478145712559538,
+                    -6.222993670463035,
+                    4.1
+                ],
+                "distance": 0.2032000000000025
+            },
+            "3vsKXYQtfEKRiHi9fuuqGm-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3vsKXYQtfEKRiHi9fuuqGm",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSlab",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Basic Roof:Generic - 100mm:741158",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -9.238161118959985,
+                    -3.931176576250384,
+                    4.1
+                ],
+                "p2": [
+                    -9.11502248984178,
+                    -4.153679544706548,
+                    4.099999999999999
+                ],
+                "distance": 0.2032000000000007
+            },
+            "36POEIiO165xGuqH$p3NuH-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "36POEIiO165xGuqH$p3NuH",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSlab",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Floor:Generic 150mm:541373",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -2.2599933654202387,
+                    -4.9118940970261935,
+                    4.675
+                ],
+                "p2": [
+                    -2.08691113862261,
+                    -5.141416180388263,
+                    4.674999999999999
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3AqlI2fMzC7PJguJEyxy3f-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3AqlI2fMzC7PJguJEyxy3f",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcBuildingElementProxy",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Trim-Window-Interior-Flat:Picture Frame:723838",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.313374672299817,
+                    -4.687966302228431,
+                    3.4444499999999945
+                ],
+                "p2": [
+                    -5.313374672299817,
+                    -4.482769339492648,
+                    3.4444499999999945
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3AqlI2fMzC7PJguJEyxy3e-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3AqlI2fMzC7PJguJEyxy3e",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcBuildingElementProxy",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Trim-Window-Exterior-Flat:with Sill:723837",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.094324672299818,
+                    -4.513554809334209,
+                    3.450753537859373
+                ],
+                "p2": [
+                    -5.094324672299818,
+                    -4.718751772069991,
+                    3.4444390202273296
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3ndkkwcKL0eP9KgEQOZTOK-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3ndkkwcKL0eP9KgEQOZTOK",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcWindow",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Window-Sliding-Double:1600 x 1800mm:482722",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.100674672299812,
+                    -4.717859337769632,
+                    3.336500000000008
+                ],
+                "p2": [
+                    -5.100674672299811,
+                    -4.51266237503385,
+                    3.3365000000000085
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3rBPad0ar8$esjaeJbQMh4-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3rBPad0ar8$esjaeJbQMh4",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcRailing",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Railing:Mounted Pipe Handrail 900mm 2:742527",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.60878803925289,
+                    -4.646448661054602,
+                    1.6029433204625665
+                ],
+                "p2": [
+                    -5.6087163373133375,
+                    -4.441261775369254,
+                    1.5857197914457262
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3kDFJMDdL9CvkKciWG$bdS-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3kDFJMDdL9CvkKciWG$bdS",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcWall",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Basic Wall:Exterior Wall - 200mm:505200",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.313374672299811,
+                    -4.48276933949265,
+                    0.34874337435169733
+                ],
+                "p2": [
+                    -5.313374672299814,
+                    -4.687966302228432,
+                    0.3167996621966748
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3vsKXYQtfEKRiHi9Xuurf6-32ZzzEy_X1peUnHIWvlyNe": {
+                "a_global_id": "3vsKXYQtfEKRiHi9Xuurf6",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyNe",
+                "a_ifc_class": "IfcColumn",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Circular Hollow Tubes-Column:CHS219.1x12.5:741680",
+                "b_name": "Basic Wall:Generic - 8\":1357260",
+                "type": "protrusion",
+                "p1": [
+                    -12.252835230893655,
+                    -6.061778488437603,
+                    4.000000000000001
+                ],
+                "p2": [
+                    -12.413810706262154,
+                    -6.0125633466550585,
+                    4.000000000000001
+                ],
+                "distance": 0.16833072758944073
+            },
+            "3vsKXYQtfEKRiHi9XuurjE-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3vsKXYQtfEKRiHi9XuurjE",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcColumn",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Circular Hollow Tubes-Column:CHS219.1x12.5:741683",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "protrusion",
+                "p1": [
+                    -9.12884095387461,
+                    -4.012507481316156,
+                    4.000000000000001
+                ],
+                "p2": [
+                    -9.148029449078004,
+                    -4.149040719104502,
+                    4.0
+                ],
+                "distance": 0.13787502808391178
+            },
+            "36POEIiO165xGuqH$p3NYc-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "36POEIiO165xGuqH$p3NYc",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcWindow",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Windows_Louvres2Panel:1600 X 1800mm:541706",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.193329621037134,
+                    -4.704837533934781,
+                    5.792189926804401
+                ],
+                "p2": [
+                    -5.209674546902947,
+                    -4.497343441674667,
+                    5.824879778536279
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3lzfVB_050YgWhM6R8O9tp-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3lzfVB_050YgWhM6R8O9tp",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcRailing",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Railing:1600mm:526965",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "protrusion",
+                "p1": [
+                    -7.365874672299819,
+                    -4.335493670463039,
+                    0.20833333333333334
+                ],
+                "p2": [
+                    -7.3464168257502696,
+                    -4.197043898261569,
+                    0.20833333333333268
+                ],
+                "distance": 0.13981039737796644
+            },
+            "3lzfVB_050YgWhM678O9v4-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3lzfVB_050YgWhM678O9v4",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcRampFlight",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Ramp:Ramp 2:526786 3",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -7.053374672299817,
+                    -4.443425249846266,
+                    0.85170263161527
+                ],
+                "p2": [
+                    -7.053374672299821,
+                    -4.238228287110482,
+                    0.8346028847206203
+                ],
+                "distance": 0.2032000000000007
+            },
+            "3lzfVB_050YgWhM6R8O9vu-32ZzzEy_X1peUnHIWvlyNe": {
+                "a_global_id": "3lzfVB_050YgWhM6R8O9vu",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyNe",
+                "a_ifc_class": "IfcRailing",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Railing:1600mm:526846",
+                "b_name": "Basic Wall:Generic - 8\":1357260",
+                "type": "protrusion",
+                "p1": [
+                    -11.853374672299822,
+                    -4.235493670463031,
+                    1.539792027106038
+                ],
+                "p2": [
+                    -11.674720451503733,
+                    -4.2901137471324855,
+                    1.5397920271060381
+                ],
+                "distance": 0.1868172459481064
+            },
+            "3lzfVB_050YgWhM6R8O9vu-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3lzfVB_050YgWhM6R8O9vu",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcRailing",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Railing:1600mm:526846",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "protrusion",
+                "p1": [
+                    -8.815874672299822,
+                    -4.110493670463036,
+                    1.7483333333333335
+                ],
+                "p2": [
+                    -8.799340757834964,
+                    -3.9928487560873007,
+                    1.748333333333333
+                ],
+                "distance": 0.11880107830320971
+            },
+            "36POEIiO165xGuqH$p3NYD-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "36POEIiO165xGuqH$p3NYD",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSlab",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Floor:Toilet_Generic 125mm:541729",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -0.6133746722998106,
+                    -5.143311262593904,
+                    4.65
+                ],
+                "p2": [
+                    -0.613374672299811,
+                    -5.348508225329686,
+                    4.649999999999999
+                ],
+                "distance": 0.2032000000000007
+            },
+            "2YR5t9N117tupCQdn85yZ7-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "2YR5t9N117tupCQdn85yZ7",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSlab",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Floor:Toilet_Generic 125mm:494174",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -0.6133746722998106,
+                    -5.143311262593904,
+                    0.9750000000000001
+                ],
+                "p2": [
+                    -0.6133746722998095,
+                    -5.348508225329686,
+                    0.9749999999999996
+                ],
+                "distance": 0.2032000000000007
+            },
+            "2lr27xQxr3dgAYJiJUYg$B-32ZzzEy_X1peUnHIWvlyNe": {
+                "a_global_id": "2lr27xQxr3dgAYJiJUYg$B",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyNe",
+                "a_ifc_class": "IfcBuildingElementProxy",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "GenericModel_TactileOneModel:GenericModel_TactileOneModel:529504",
+                "b_name": "Basic Wall:Generic - 8\":1357260",
+                "type": "protrusion",
+                "p1": [
+                    -12.207841852187187,
+                    -5.663821479081977,
+                    0.01
+                ],
+                "p2": [
+                    -12.298697249881798,
+                    -5.636044196430605,
+                    0.010000000000000434
+                ],
+                "distance": 0.09500674040161597
+            },
+            "3lzfVB_050YgWhMAp8O9v4-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "3lzfVB_050YgWhMAp8O9v4",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcSlab",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Ramp:Ramp 2:526786 1",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -8.351682658146943,
+                    -4.055762999078743,
+                    0.20833333333333268
+                ],
+                "p2": [
+                    -8.784702595879258,
+                    -4.200102978322847,
+                    0.20833333333333334
+                ],
+                "distance": 0.2032000000000007
+            },
+            "36POEIiO165xGuqH$p3NvW-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "36POEIiO165xGuqH$p3NvW",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcWall",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Basic Wall:Interior Wall - 200mm:541388",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -0.7283746722998059,
+                    -5.332346029338911,
+                    4.675
+                ],
+                "p2": [
+                    -0.7283746722998057,
+                    -5.127149066603129,
+                    4.675
+                ],
+                "distance": 0.2032000000000007
+            },
+            "36POEIiO165xGuqH$p3NvZ-32ZzzEy_X1peUnHIWvlyKG": {
+                "a_global_id": "36POEIiO165xGuqH$p3NvZ",
+                "b_global_id": "32ZzzEy_X1peUnHIWvlyKG",
+                "a_ifc_class": "IfcWall",
+                "b_ifc_class": "IfcWallStandardCase",
+                "a_name": "Basic Wall:Exterior Wall - 200mm:541391",
+                "b_name": "Basic Wall:Generic - 8\":1357108",
+                "type": "pierce",
+                "p1": [
+                    -5.31337467229981,
+                    -4.48276933949265,
+                    5.475
+                ],
+                "p2": [
+                    -5.31337467229981,
+                    -4.687966302228432,
+                    5.475
+                ],
+                "distance": 0.2032000000000007
+            }
+        }
     }
-  }
 ]

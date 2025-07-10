@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/src/app
-    command: python3 main.py --file-a test1.ifc --file-b test2.ifc --selector-b IfcWall --mode intersection --tolerance 0.01 --check-all True
+    command: python3 main.py --file-a data/golden.ifc --file-b data/test1.ifc --selector-b IfcWall --mode intersection --tolerance 0.01 --check-all True
